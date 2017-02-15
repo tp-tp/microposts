@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
     validates :self_introduction , length: { minimum: 2, maximum: 100 } , presence: true
     validates :password , length: { minimum: 5, maximum: 50 } , presence: true
     has_secure_password
+    
+    has_many :microposts
 end
