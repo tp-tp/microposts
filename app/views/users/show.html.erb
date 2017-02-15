@@ -2,3 +2,8 @@
     <%= gravatar_for @user %>
     <%= @user.name %>
 </h1>
+<p>
+    Place：<%= @user.place %>
+    <br>
+    <%= simple_format(h(@user.self_introduction)) %>
+</p>
